@@ -6,7 +6,6 @@
 }
 
 .gif-grid {
-  border: solid 0.01rem green;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   /* grid-template-rows: 200px 75px; */

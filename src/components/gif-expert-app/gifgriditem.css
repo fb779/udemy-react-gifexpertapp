@@ -1,6 +1,9 @@
 .grid-item {
+  border: solid 0.01rem #a1eddb;
+  border-radius: 4px;
   display: flex;
   flex-flow: column nowrap;
+  overflow: hidden;
 }
 
 .grid-item img {

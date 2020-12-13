@@ -1,27 +1,22 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import GifGridItem from './GifGridItem';
-import {getGif} from '../../helpers/ApiGetGifs';
+
+import {useFetchGifs} from '../../hooks/useFetchGifs';
 
 import './gifgridapp.css';
 
 const GifGrid = ({category}) => {
-  const [images, setImages] = useState([]);
-
-  // useEffect(async () => {
-  //   setImages(await getGif(category));
-  // }, []);
-  useEffect(() => {
-    getGif(category).then(setImages);
-  }, [category]);
+  const {data: images, loading} = useFetchGifs(category);
 
   return (
     <section className="gif">
-      <section className="gif-title">
+      <section className="gif-title animate__animated animate__lightSpeedInRight">
         <h4>{category}</h4>
       </section>
 
+      {loading && <p className="animate__animated animate__flash">Cargando data...</p>}
       <section className="gif-grid">
         {images.map((img) => (
           <GifGridItem key={img.id} {...img} />
