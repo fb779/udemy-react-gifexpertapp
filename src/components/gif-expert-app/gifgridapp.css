@@ -1,0 +1,14 @@
+.gif {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.gif-grid {
+  border: solid 0.01rem green;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-rows: 200px 75px; */
+  grid-gap: 0.5rem;
+}
