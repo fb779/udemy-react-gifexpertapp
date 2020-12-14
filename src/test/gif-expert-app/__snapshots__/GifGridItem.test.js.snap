@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en componente <GifGridItem /> debe cargar el componenete de forma adecuada 1`] = `
+<section
+  className="grid-item animate__animated animate__fadeIn"
+>
+  <img
+    alt="Samuray X"
+    src="https://localhost.com/api/v1/imagen.png"
+  />
+  <p>
+    Samuray X
+  </p>
+</section>
+`;

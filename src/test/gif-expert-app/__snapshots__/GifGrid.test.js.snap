@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifGrid /> Prueba de carga del componente  1`] = `
+<section
+  className="gif"
+>
+  <section
+    className="gif-title animate__animated animate__lightSpeedInRight"
+  >
+    <h4>
+      Samurai X
+    </h4>
+  </section>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Cargando data...
+  </p>
+  <section
+    className="gif-grid"
+  />
+</section>
+`;
