@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import './gifgriditem.css';
 
@@ -7,14 +7,15 @@ import './gifgriditem.css';
 const GifGridItem = ({title, url}) => {
   return (
     <section className="grid-item animate__animated animate__fadeIn">
-      <div>
-        <img src={url} alt={title} />
-      </div>
+      <img src={url} alt={title} />
       <p>{title}</p>
     </section>
   );
 };
 
-// GifGridItem.propTypes = {};
+GifGridItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+};
 
 export default GifGridItem;
