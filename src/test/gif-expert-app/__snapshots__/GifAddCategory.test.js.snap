@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`prubeas en <GifAddCategory /> Carga del componenete <GifAddCategory />  1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <p />
+  <input
+    onChange={[Function]}
+    placeholder="Valor por defecto"
+    type="text"
+    value=""
+  />
+</form>
+`;

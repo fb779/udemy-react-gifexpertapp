@@ -10,6 +10,7 @@ const GifAddCategory = ({setcategories}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (!inputValue) return;
     setcategories((catg) => {
       if (catg.includes(inputValue)) return catg;
@@ -20,6 +21,7 @@ const GifAddCategory = ({setcategories}) => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <p>{inputValue}</p>
       <input type="text" value={inputValue} onChange={handleInputChange} placeholder="Valor por defecto" />
     </form>
   );
