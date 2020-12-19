@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pruebas en <GifExpertApp /> Prueba de carga del componente  1`] = `
+exports[`Pruebas en <GifExpertApp /> Debe cargar una lista de categorias especificas  1`] = `
 <Fragment>
   <GifAddCategory
     setcategories={[Function]}
@@ -8,9 +8,23 @@ exports[`Pruebas en <GifExpertApp /> Prueba de carga del componente  1`] = `
   <hr />
   <div>
     <GifGrid
-      category="Samurai X"
-      key="Samurai X"
+      category="ip man"
+      key="ip man"
+    />
+    <GifGrid
+      category="saitama"
+      key="saitama"
     />
   </div>
+</Fragment>
+`;
+
+exports[`Pruebas en <GifExpertApp /> Prueba de carga del componente  1`] = `
+<Fragment>
+  <GifAddCategory
+    setcategories={[Function]}
+  />
+  <hr />
+  <div />
 </Fragment>
 `;

@@ -17,6 +17,7 @@ const GifGrid = ({category}) => {
       </section>
 
       {loading && <p className="animate__animated animate__flash">Cargando data...</p>}
+
       <section className="gif-grid">
         {images.map((img) => (
           <GifGridItem key={img.id} {...img} />
