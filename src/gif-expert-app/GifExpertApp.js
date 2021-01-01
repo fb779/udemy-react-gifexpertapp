@@ -4,7 +4,6 @@ import GifAddCategory from './GifAddCategory';
 import GifGrid from './GifGrid';
 
 const GifExpertApp = ({defaultCategories = []}) => {
-  // const [categories, setcategories] = useState(['Samurai X']);
   const [categories, setcategories] = useState(defaultCategories);
 
   return (
